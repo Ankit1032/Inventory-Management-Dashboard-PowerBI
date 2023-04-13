@@ -1,5 +1,4 @@
 # INVENTORY MANAGEMENT DASHBOARD
-It consists of
 1. ABC Classification
 2. XYZ Classification
 3. Inventory Turnover Ratio
@@ -9,7 +8,7 @@ It consists of
 6. Stock Status
 7. Forecasting for the next time period
 
-#For any warehouse inventory related data, to main tables are important
+#For any warehouse inventory related data, 2 main tables are important
 	1. What is the stock quantity
 	2. What is the orders/Asked Orders
 	
@@ -17,7 +16,7 @@ It consists of
 
 #Against each SKU, we will try to get the annual sales qty from the "Past Orders" data
 
-Step 1. We created following new columns on stock data 
+Step 1. We created following new columns on stock data
 	1. Annual sales quantity : We calculated the quantity of each SKU ID. Quantity was present in "Past Orders" Column
 	
 	2. Annual Revenue : Annual sales quantity * unit price
@@ -63,6 +62,10 @@ Step 3 : XYZ Classification
 				Z items: These are items that have the highest demand variability and are the most difficult to forecast accurately. They are typically managed using a make-to-order (MTO) approach, where production is triggered by customer orders, rather than by a forecast.
 
 				The XYZ Classification method is often used in combination with the ABC Classification method, which categorizes items based on their value. This allows companies to prioritize their inventory management efforts based on both the demand variability and the value of the items.
+				
+				MTS : MTS is a strategy in which goods are produced based on anticipated customer demand, before actual customer orders are received. This means that goods are manufactured and stocked in inventory, in anticipation of future sales. In other words, MTS companies create products based on a forecast of what customers will want to buy.
+				
+				MTO : MTO is a strategy in which goods are produced only after a customer places an order. This means that goods are manufactured in response to a specific customer request. MTO companies create products based on the specific requirements of each customer.
 			
 Step 4: To do XYZ analysis, We need to analyze the weekly demand for each item
 	a. Modelling -> New Table -> Name should be "Week Table"
